@@ -1,0 +1,149 @@
+<html lang="sr">
+    <head>
+        <title>PROWELDING</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- SEO meta tagovi -->
+        <meta name="description" content="PROWEDLING DOO - Profesionalne građevinske usluge, planiranje, projektovanje, sigurnost i tačnost u izvođenju radova.">
+        <meta name="keywords" content="Prowelding, građevina, građevinske usluge, izgradnja kuća, poslovni prostori, projektovanje, planiranje, sigurnost, gradnja Srbija, građevinska firma">
+        <meta name="author" content="PROWEDLING DOO">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <header>
+          <div class="logo"><img src="logonov1.png" alt="Logo PROWEDLING"></div>
+          <nav>
+            <a href="pocetna.html">Početna</a>
+            <a href="onama.html" >O nama</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="cenovnik.html" class="active">Cenovnik</a>
+            <a href="kontakt.html">Kontakt</a>
+          </nav>
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+       </header>
+
+    <section class="cenovnik">
+    <h1>Naš cenovnik</h1>
+    <div class="pricing-grid">
+
+      <div class="price-card">
+    <h3>Ključ u ruke (sa materijalom)</h3>
+    <p>Kompletna izgradnja objekta sa svim radovima i materijalom.</p>
+    <div class="price">od 400 € do 850 € / m² (bez PDV-a)</div>
+    <a href="kontakt.html" class="btn">Zakaži sastanak</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Siva faza (sa materijalom)</h3>
+    <p>Grubi građevinski radovi uključujući zidanje, ploče i malterisanje.</p>
+    <div class="price">od 190 € do 440 € / m² (bez PDV-a)</div>
+    <a href="kontakt.html" class="btn">Zakaži sastanak</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Izrada krovova (sa materijalom)</h3>
+    <p>Kompletna izrada krova sa drvenom konstrukcijom i pokrivačem.</p>
+    <div class="price">45 € / m² (bez PDV-a)</div>
+    <a href="kontakt.html" class="btn">Zakaži sastanak</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Siva faza (bez materijala)</h3>
+    <p>Izvođenje radova bez obezbeđivanja građevinskog materijala.</p>
+    <div class="price">od 55 € do 120 € / m² (bez PDV-a)</div>
+    <a href="kontakt.html" class="btn">Zakaži sastanak</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Gletovanje i krečenje</h3>
+    <p>Završna obrada zidova i plafona za savršen izgled prostora.</p>
+    <div class="price">4 € / m² (bez PDV-a)</div>
+    <a href="kontakt.html" class="btn">Zakaži sastanak</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Krečenje u boji</h3>
+    <p>Profesionalno farbanje zidova bojama po izboru klijenta.</p>
+    <div class="price">4 € / m² (bez PDV-a)</div>
+    <a href="kontakt.html" class="btn">Zakaži sastanak</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Izrada krovova (bez materijala)</h3>
+    <p>Postavljanje krovne konstrukcije i pokrivača uz materijal klijenta.</p>
+    <div class="price">od 15 € do 25 € / m² (bez PDV-a)</div>
+    <a href="kontakt.html" class="btn">Zakaži sastanak</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Fasade</h3>
+    <p>Izrada termo fasade i spoljne izolacije objekta.</p>
+    <div class="price">od 15 € do 25 € / m² (bez PDV-a)</div>
+    <a href="kontakt.html" class="btn">Zakaži sastanak</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Gips radovi</h3>
+    <p>Postavljanje gips ploča, spuštenih plafona i pregradnih zidova.</p>
+    <div class="price">14 € / m² (bez PDV-a)</div>
+    <a href="kontakt.html" class="btn">Zakaži sastanak</a>
+  </div>
+
+  </section>
+  
+<div class="calculator">
+  <h2>Kalkulator Cena</h2>
+
+  <div class="custom-select" id="serviceOptions">
+    <div class="option" data-min="400" data-max="850">Ključ u ruke (sa materijalom)</div>
+    <div class="option" data-min="190" data-max="440">Siva faza (sa materijalom)</div>
+    <div class="option" data-min="45" data-max="45">Izrada krovova (sa materijalom)</div>
+    <div class="option" data-min="55" data-max="120">Siva faza (bez materijala)</div>
+    <div class="option" data-min="4" data-max="4">Gletovanje i krečenje</div>
+    <div class="option" data-min="4" data-max="4">Krečenje u boji</div>
+    <div class="option" data-min="15" data-max="25">Izrada krovova (bez materijala)</div>
+    <div class="option" data-min="15" data-max="25">Fasade</div>
+    <div class="option" data-min="14" data-max="14">Gips</div>
+  </div>
+
+  <label for="area">Kvadratura (m²):</label>
+  <input type="number" id="area" placeholder="Unesite površinu">
+
+  <button onclick="calculate()">Izračunaj</button>
+
+  <div class="result" id="result"></div>
+</div>
+
+
+     <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-social">
+      <h3>Pratite nas</h3>
+      <a href="https://www.facebook.com/p/ProWelding-Doo-61576932562239/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/prowelding.doo/" target="_blank">Instagram</a>
+
+    </div>
+
+    <div class="footer-contact">
+      <h3>Kontakt</h3>
+      <p>Email: <a href="mailto:proweldingdoo@gmail.com">proweldingdoo@gmail.com</a></p>
+      <p>Telefon: <a href="tel:+381601317986">+381 60 1317986</a></p>
+      <p>Adresa: Kragujevac, Srbija</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 PROWEDLING DOO. Sva prava zadržana.</p>
+    <p>Dizajn: kragujdigital</p>
+  </div>
+</footer>
+
+    </body>
+    <script src="script.js"></script>
+</html>

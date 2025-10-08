@@ -1,0 +1,188 @@
+<html lang="sr">
+    <head>
+        <title>PROWELDING</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- SEO meta tagovi -->
+        <meta name="description" content="PROWEDLING DOO - Profesionalne građevinske usluge, planiranje, projektovanje, sigurnost i tačnost u izvođenju radova.">
+        <meta name="keywords" content="Prowelding, građevina, građevinske usluge, izgradnja kuća, poslovni prostori, projektovanje, planiranje, sigurnost, gradnja Srbija, građevinska firma">
+        <meta name="author" content="PROWEDLING DOO">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+      background-color: #0f0f0f;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+        </style>
+    </head>
+    <body>
+       <header>
+          <div class="logo"><img src="logonov1.png" alt="Logo PROWEDLING"></div>
+          <nav>
+            <a href="pocetna.html">Početna</a>
+            <a href="onama.html" >O nama</a>
+            <a href="galerija.html" class="active">Galerija</a>
+            <a href="cenovnik.html">Cenovnik</a>
+            <a href="kontakt.html">Kontakt</a>
+          </nav>
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+       </header>
+
+<section class="projects-gallery">
+  <h2>Naši Projekti</h2>
+
+  <!-- Projekat 1 -->
+  <div class="project">
+    <h3>Renoviranje zgrade</h3>
+    <div class="project-grid">
+      <img src="slike/11.jpg" alt="Renoviranje zgrade - pre">
+      <img src="slike/12.jpg" alt="Renoviranje zgrade - posle">
+    </div>
+  </div>
+
+  <!-- Projekat 2 -->
+  <div class="project">
+    <h3>Siva faza</h3>
+    <div class="project-grid">
+      <img src="slike/21.jpg" alt="Siva faza ">
+      <img src="slike/22.jpg" alt="Siva faza ">
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Projekt 3</h3>
+    <div class="project-grid">
+      <img src="slike/31.jpg" >
+      <img src="slike/32.jpg" >
+      <img src="slike/33.jpg" >
+      <img src="slike/34.jpg" >
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Projekt 4</h3>
+    <div class="project-grid">
+      <img src="slike/41.jpg" >
+      <img src="slike/42.jpg" >
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Ključ u ruke</h3>
+    <div class="project-grid">
+      <img src="slike/51.jpg" >
+      <img src="slike/6.jpg" >
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Ključ u ruke</h3>
+    <div class="project-grid">
+      <img src="slike/71.jpg" >
+      <img src="slike/72.jpg" >
+      <img src="slike/73.jpg" >
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Ključ u ruke</h3>
+    <div class="project-grid">
+      <img src="slike/81.jpg" >
+      <img src="slike/82.jpg" >
+      <img src="slike/83.jpg" >
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Ključ u ruke</h3>
+    <div class="project-grid">
+      <img src="slike/91.jpg" >
+      <img src="slike/92.jpg" >
+      <img src="slike/93.jpg" >
+      <img src="slike/94.jpg" >
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Projekat</h3>
+    <div class="project-grid">
+      <img src="slike/pre.jpg" >
+      <img src="slike/posle.jpg" >
+    </div>
+  </div>
+
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-caption"></p>
+</div>
+
+
+
+
+
+      <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-social">
+      <h3>Pratite nas</h3>
+      <a href="https://www.facebook.com/p/ProWelding-Doo-61576932562239/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/prowelding.doo/" target="_blank">Instagram</a>
+
+    </div>
+
+    <div class="footer-contact">
+      <h3>Kontakt</h3>
+      <p>Email: <a href="mailto:proweldingdoo@gmail.com">proweldingdoo@gmail.com</a></p>
+      <p>Telefon: <a href="tel:+381601317986">+381 60 1317986</a></p>
+      <p>Adresa: Kragujevac, Srbija</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 PROWEDLING DOO. Sva prava zadržana.</p>
+    <p>Dizajn: kragujdigital</p>
+  </div>
+</footer>
+
+    </body>
+    <script src="script.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryPics = document.querySelectorAll('.project-grid img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const caption = document.getElementById('lightbox-caption');
+  const closeBtn = document.querySelector('#lightbox .close');
+
+  galleryPics.forEach(pic => {
+    pic.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = pic.src;
+      caption.textContent = pic.alt;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  window.addEventListener('click', e => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+});
+</script>
+</html>
